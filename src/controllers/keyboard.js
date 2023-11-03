@@ -30,6 +30,7 @@ import tooltip from '../global/tooltip';
 import locale from '../locale/locale';
 import {enterKeyControll} from './inlineString';
 import Store from '../store';
+import method from "../global/method";
 
 
 let luckysheet_shiftkeydown = false;
@@ -562,7 +563,15 @@ export function keyboardInitial(){
                             return;
                         }    
                     }
-
+                    // hook
+                    if (
+                        !method.createHookFunction(
+                        "rangeCopyBefore",
+                        JSON.parse(JSON.stringify(Store.luckysheet_select_save))
+                        )
+                    ) {
+                        return;
+                    }
                     selection.copy(event);
 
                     Store.luckysheet_paste_iscut = false;
@@ -659,7 +668,15 @@ export function keyboardInitial(){
                         }
                         return;
                     }
-
+                    // hook
+                    if (
+                        !method.createHookFunction(
+                        "rangeCutBefore",
+                        JSON.parse(JSON.stringify(Store.luckysheet_select_save))
+                        )
+                    ) {
+                        return;
+                    }
                     selection.copy(event);
 
                     Store.luckysheet_paste_iscut = true;
