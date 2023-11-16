@@ -231,7 +231,7 @@ const imageCtrl = {
     $("#luckysheet-modal-dialog-slider-imageCtrl").remove();
 
     let sliderHtml = _this.getSliderHtml();
-    $("body.object-design").append(sliderHtml);
+    $("body#object-design").append(sliderHtml);
     luckysheetsizeauto();
 
     let imgItem = _this.images[_this.currentImgId];
@@ -276,7 +276,7 @@ const imageCtrl = {
     $("#luckysheet-modal-dialog-mask").show();
     $("#luckysheet-imageCtrl-colorSelect-dialog").remove();
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-imageCtrl-colorSelect-dialog",
         addclass: "luckysheet-imageCtrl-colorSelect-dialog",

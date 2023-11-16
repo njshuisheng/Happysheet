@@ -328,7 +328,7 @@ const luckysheetDropCell = {
         $("#luckysheet-dropCell-typeList").remove();
         const _locale = locale();
         const locale_dropCell = _locale.dropCell;
-        $("body.object-design").append(
+        $("body#object-design").append(
           replaceHtml(_this.typeListHtml, {
             copyCell: locale_dropCell.copyCell,
             sequence: locale_dropCell.sequence,

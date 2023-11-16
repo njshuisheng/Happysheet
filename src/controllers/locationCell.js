@@ -123,7 +123,7 @@ const luckysheetLocationCell = {
       "</div>" +
       "</div>";
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-locationCell-dialog",
         addclass: "luckysheet-locationCell-dialog",

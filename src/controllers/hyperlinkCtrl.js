@@ -74,7 +74,7 @@ const hyperlinkCtrl = {
                             </div>
                         </div>`;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-insertLink-dialog",
         addclass: "luckysheet-insertLink-dialog",

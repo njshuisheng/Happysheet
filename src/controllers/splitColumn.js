@@ -73,7 +73,7 @@ const luckysheetSplitColumn = {
       "</div>" +
       "</div>";
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-splitColumn-dialog",
         addclass: "luckysheet-splitColumn-dialog",

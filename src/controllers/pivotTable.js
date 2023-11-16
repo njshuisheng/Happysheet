@@ -1115,13 +1115,13 @@ const pivotTable = {
     if (_this.initial) {
       _this.initial = false;
 
-      $("body.object-design").append(luckysheetPivotTableHTML());
+      $("body#object-design").append(luckysheetPivotTableHTML());
       $("#luckysheet-modal-dialog-slider-close").click(function () {
         $("#luckysheet-modal-dialog-slider-pivot").hide();
         luckysheetsizeauto();
       });
 
-      $("body.object-design").append(
+      $("body#object-design").append(
         replaceHtml(modelHTML, {
           id: "luckysheet-data-pivotTable-selection",
           addclass: "luckysheet-data-pivotTable-selection",
@@ -1141,14 +1141,14 @@ const pivotTable = {
         })
       );
 
-      $("body.object-design").append(
+      $("body#object-design").append(
         replaceHtml(filtermenuHTML(), { menuid: "pivotTableFilter" })
       );
-      $("body.object-design").append(
+      $("body#object-design").append(
         replaceHtml(filtersubmenuHTML(), { menuid: "pivotTableFilter" })
       );
-      $("body.object-design").append(pivottableconfigHTML());
-      $("body.object-design").append(pivottablesumHTML());
+      $("body#object-design").append(pivottableconfigHTML());
+      $("body#object-design").append(pivottablesumHTML());
 
       $("#luckysheet-pivotTableFilter-orderby-asc").remove();
       $("#luckysheet-pivotTableFilter-orderby-desc").next().remove();
@@ -2479,7 +2479,7 @@ const pivotTable = {
           _this.movesave.index = $cur.data("index");
 
           if ($("#luckysheet-modal-dialog-slider-pivot-move").length == 0) {
-            $("body.object-design").append(
+            $("body#object-design").append(
               '<div id="luckysheet-modal-dialog-slider-pivot-move">' +
                 _this.movesave.name +
                 "</div>"

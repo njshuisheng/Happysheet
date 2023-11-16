@@ -220,7 +220,7 @@ const insertFormula = {
           $("#luckysheet-search-formula-parm-select").remove();
 
           if ($(this).parents(".parmBox").find(".txt input").val() == "") {
-            $("body.object-design").append(
+            $("body#object-design").append(
               replaceHtml(modelHTML, {
                 id: "luckysheet-search-formula-parm-select",
                 addclass: "luckysheet-search-formula-parm-select",
@@ -239,7 +239,7 @@ const insertFormula = {
               })
             );
           } else {
-            $("body.object-design").append(
+            $("body#object-design").append(
               replaceHtml(modelHTML, {
                 id: "luckysheet-search-formula-parm-select",
                 addclass: "luckysheet-search-formula-parm-select",
@@ -324,7 +324,7 @@ const insertFormula = {
     $("#luckysheet-modal-dialog-mask").show();
     $("#luckysheet-search-formula").remove();
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-search-formula",
         addclass: "luckysheet-search-formula",
@@ -499,7 +499,7 @@ const insertFormula = {
     $("#luckysheet-modal-dialog-mask").hide();
 
     $("#luckysheet-search-formula-parm").remove();
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-search-formula-parm",
         addclass: "luckysheet-search-formula-parm",

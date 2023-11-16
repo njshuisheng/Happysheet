@@ -16,7 +16,7 @@ const tooltip = {
     let _locale = locale();
     let locale_button = _locale.button;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-info",
         addclass: "",
@@ -60,7 +60,7 @@ const tooltip = {
       name2 = locale_button.cancel;
     }
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-confirm",
         addclass: "",
@@ -112,7 +112,7 @@ const tooltip = {
     const locale_screenshot = _locale.screenshot;
     $("#luckysheet-modal-dialog-mask").show();
     $("#luckysheet-confirm").remove();
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-confirm",
         addclass: "",
@@ -182,7 +182,7 @@ const tooltip = {
     });
   },
   chartPointConfig: function (id, savefunc1, closefunc2) {
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: id,
         addclass: "luckysheet-chart-point-config-c",
@@ -256,7 +256,7 @@ const tooltip = {
           }
 
           if ($toolup.length == 0) {
-            $("body.object-design").append(luckysheetToolHTML);
+            $("body#object-design").append(luckysheetToolHTML);
             $toolup = $("#luckysheet-tooltip-up");
           }
 
@@ -308,7 +308,7 @@ const tooltip = {
       btntxt +
       "</div></div>";
     $("#luckysheetpopover").remove();
-    $("body.object-design").append(htmldiv);
+    $("body#object-design").append(htmldiv);
     $("#luckysheetpopover .luckysheetpopover-content").html(content);
 
     let w = $("#luckysheetpopover").outerWidth(),

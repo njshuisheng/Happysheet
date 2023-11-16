@@ -607,7 +607,7 @@ const menuButton = {
         });
 
         //luckysheet-icon-fmt-other-menuButton_sub
-        $("body.object-design").append(menu + submenu);
+        $("body#object-design").append(menu + submenu);
         $menuButton = $("#" + menuButtonId).width(250);
         _this.focus($menuButton);
 
@@ -705,7 +705,7 @@ const menuButton = {
             sub: "",
           });
 
-          $("body.object-design").append(menu);
+          $("body#object-design").append(menu);
           $menuButton = $("#" + menuButtonId).width(200);
           _this.focus($menuButton);
 
@@ -796,7 +796,7 @@ const menuButton = {
             resetColor: locale_toolbar.resetColor,
           });
 
-          $("body.object-design").append(menu);
+          $("body#object-design").append(menu);
           $menuButton = $("#" + menuButtonId);
 
           $("#" + menuButtonId)
@@ -1029,7 +1029,7 @@ const menuButton = {
           resetColor: locale_toolbar.resetColor,
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId);
 
         $("#" + menuButtonId)
@@ -1272,7 +1272,7 @@ const menuButton = {
             sub: "",
           });
 
-          $("body.object-design").append(menu);
+          $("body#object-design").append(menu);
           $menuButton = $("#" + menuButtonId).width(150);
           _this.focus($menuButton, 10);
 
@@ -1699,7 +1699,7 @@ const menuButton = {
           resetColor: locale_toolbar.resetColor,
         });
 
-        $("body.object-design").append(menu + colormenu + submenu);
+        $("body#object-design").append(menu + colormenu + submenu);
         $menuButton = $("#" + menuButtonId).width(170);
         _this.focus($menuButton, "border-all");
 
@@ -2060,7 +2060,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId);
         _this.focus($menuButton);
 
@@ -2181,7 +2181,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(120);
         _this.focus($menuButton);
 
@@ -2279,7 +2279,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(120);
         _this.focus($menuButton, "bottom");
 
@@ -2368,7 +2368,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(120);
         _this.focus($menuButton, "clip");
 
@@ -2475,7 +2475,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
 
         // 文字旋转总 Stack Vertically 太长了，拉宽到160
         $menuButton = $("#" + menuButtonId).width(160);
@@ -2574,7 +2574,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(170);
 
         $menuButton.find(".luckysheet-cols-menuitem").click(function () {
@@ -3165,7 +3165,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(150);
 
         $menuButton.find(".luckysheet-cols-menuitem").click(function () {
@@ -3293,7 +3293,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(180);
 
         $menuButton.find(".luckysheet-cols-menuitem").click(function () {
@@ -3463,7 +3463,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(180);
 
         $menuButton.find(".luckysheet-cols-menuitem").click(function () {
@@ -3864,7 +3864,7 @@ const menuButton = {
           subclass: "luckysheet-menuButton-sub",
         });
 
-        $("body.object-design").append(
+        $("body#object-design").append(
           menu + submenu + submenu2 + submenu3 + submenu4 + submenu6
         );
         $menuButton = $("#" + menuButtonId).width(190);
@@ -4327,7 +4327,7 @@ const menuButton = {
         sub: "",
       });
 
-      $("body.object-design").append(menu);
+      $("body#object-design").append(menu);
       $menuButton = $("#" + menuButtonId).width(150);
 
       $menuButton.find(".luckysheet-cols-menuitem").click(function () {
@@ -4419,7 +4419,7 @@ const menuButton = {
           sub: "",
         });
 
-        $("body.object-design").append(menu);
+        $("body#object-design").append(menu);
         $menuButton = $("#" + menuButtonId).width(180);
 
         $menuButton.find(".luckysheet-cols-menuitem").click(function () {

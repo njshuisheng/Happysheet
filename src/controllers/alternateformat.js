@@ -303,7 +303,7 @@ const alternateformat = {
     let _this = this;
 
     $("#luckysheet-modal-dialog-slider-alternateformat").remove();
-    $("body.object-design").append(luckysheetAlternateformatHtml());
+    $("body#object-design").append(luckysheetAlternateformatHtml());
     luckysheetsizeauto();
 
     //关闭
@@ -989,7 +989,7 @@ const alternateformat = {
       title = alternatingColors.selectionCellColor;
     }
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-alternateformat-colorSelect-dialog",
         addclass: "luckysheet-alternateformat-colorSelect-dialog",
@@ -1140,7 +1140,7 @@ const alternateformat = {
     const alternatingColors = _locale.alternatingColors;
     const locale_button = _locale.button;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-alternateformat-rangeDialog",
         addclass: "luckysheet-alternateformat-rangeDialog",

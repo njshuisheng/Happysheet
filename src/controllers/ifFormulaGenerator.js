@@ -524,7 +524,7 @@ const ifFormulaGenerator = {
       ifListHtml +
       "</div>";
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-ifFormulaGenerator-dialog",
         addclass: "luckysheet-ifFormulaGenerator-dialog",
@@ -603,7 +603,7 @@ const ifFormulaGenerator = {
       value = "";
     }
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-ifFormulaGenerator-singleRange-dialog",
         addclass: "luckysheet-ifFormulaGenerator-singleRange-dialog",
@@ -649,7 +649,7 @@ const ifFormulaGenerator = {
     const locale_formula = _locale.formula;
     const locale_button = _locale.button;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-ifFormulaGenerator-multiRange-dialog",
         addclass: "luckysheet-ifFormulaGenerator-multiRange-dialog",
@@ -769,7 +769,7 @@ const ifFormulaGenerator = {
     const _locale = locale();
     const locale_button = _locale.button;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-ifFormulaGenerator-info",
         addclass: "",

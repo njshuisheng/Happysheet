@@ -226,7 +226,7 @@ const dataVerificationCtrl = {
                             </div>
                         </div>`;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-dataVerification-dialog",
         addclass: "luckysheet-dataVerification-dialog",
@@ -1372,7 +1372,7 @@ const dataVerificationCtrl = {
     $("#luckysheet-modal-dialog-mask").hide();
     $("#luckysheet-dataVerificationRange-dialog").remove();
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-dataVerificationRange-dialog",
         addclass: "luckysheet-dataVerificationRange-dialog",

@@ -154,17 +154,17 @@ export default function luckysheetcreatedom(
   );
 
   //新建行菜单
-  $("body.object-design").append(maskHTML);
-  $("body.object-design").append(colsmenuHTML);
-  $("body.object-design").append(rightclickHTML());
-  $("body.object-design").append(inputHTML);
-  $("body.object-design").append(
+  $("body#object-design").append(maskHTML);
+  $("body#object-design").append(colsmenuHTML);
+  $("body#object-design").append(rightclickHTML());
+  $("body#object-design").append(inputHTML);
+  $("body#object-design").append(
     replaceHtml(filtermenuHTML(), { menuid: "filter" })
   );
-  $("body.object-design").append(
+  $("body#object-design").append(
     replaceHtml(filtersubmenuHTML(), { menuid: "filter" })
   );
-  $("body.object-design").append(sheetconfigHTML());
+  $("body#object-design").append(sheetconfigHTML());
 
   $("#luckysheet-rows-h").width(Store.rowHeaderWidth - 1.5);
   $("#luckysheet-cols-h-c").height(Store.columnHeaderHeight - 1.5);

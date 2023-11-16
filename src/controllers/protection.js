@@ -574,7 +574,7 @@ function initialProtectionRangeModal(file) {
   let _locale = locale();
   let local_protection = _locale.protection;
   const locale_button = _locale.button;
-  $("body.object-design").append(
+  $("body#object-design").append(
     replaceHtml(modelHTML, {
       id: "luckysheet-protection-rangeItem-dialog",
       addclass: "luckysheet-protection-rangeItem-dialog",
@@ -703,10 +703,10 @@ function initialProtectionRIghtBar(file) {
     </div>
     `;
 
-  $("body.object-design").append(protectionModalHtml);
+  $("body#object-design").append(protectionModalHtml);
 
   //Password input initial for sheet Protection
-  $("body.object-design").append(
+  $("body#object-design").append(
     replaceHtml(modelHTML, {
       id: "luckysheet-protection-sheet-validation",
       addclass: "luckysheet-protection-sheet-validation",
@@ -927,7 +927,7 @@ function openRangePasswordModal(rangeAut) {
 
   if (!initialRangePasswordHtml) {
     //Password input initial for range
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-protection-range-validation",
         addclass: "luckysheet-protection-sheet-validation",

@@ -1933,7 +1933,7 @@ const conditionformat = {
 
     const conditionformat_Text = locale().conditionformat;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-singleRange-dialog",
         addclass: "luckysheet-singleRange-dialog",
@@ -1969,7 +1969,7 @@ const conditionformat = {
 
     const conditionformat_Text = locale().conditionformat;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-multiRange-dialog",
         addclass: "luckysheet-multiRange-dialog",
@@ -2147,7 +2147,7 @@ const conditionformat = {
 
     const conditionformat_Text = locale().conditionformat;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-conditionformat-dialog",
         addclass: "luckysheet-conditionformat-dialog",
@@ -2244,7 +2244,7 @@ const conditionformat = {
                             </div>
                         </div>`;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-CFicons-dialog",
         addclass: "luckysheet-CFicons-dialog",
@@ -2311,7 +2311,7 @@ const conditionformat = {
                             </div>
                         </div>`;
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-administerRule-dialog",
         addclass: "luckysheet-administerRule-dialog",
@@ -2661,7 +2661,7 @@ const conditionformat = {
       "</div>" +
       "</div>";
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-newConditionRule-dialog",
         addclass: "luckysheet-newEditorRule-dialog",
@@ -2792,7 +2792,7 @@ const conditionformat = {
       "</div>" +
       "</div>";
 
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-editorConditionRule-dialog",
         addclass: "luckysheet-newEditorRule-dialog",
@@ -3053,7 +3053,7 @@ const conditionformat = {
   infoDialog: function (title, content) {
     $("#luckysheet-modal-dialog-mask").show();
     $("#luckysheet-conditionformat-info-dialog").remove();
-    $("body.object-design").append(
+    $("body#object-design").append(
       replaceHtml(modelHTML, {
         id: "luckysheet-conditionformat-info-dialog",
         addclass: "",

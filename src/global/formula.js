@@ -1099,7 +1099,7 @@ const luckysheetformula = {
     let _this = this;
 
     if ($("#luckysheet-formula-search-c").length == 0) {
-      $("body.object-design").append(_this.searchHTML);
+      $("body#object-design").append(_this.searchHTML);
       $("#luckysheet-formula-search-c")
         .on("mouseover", ".luckysheet-formula-search-item", function () {
           $("#luckysheet-formula-search-c")

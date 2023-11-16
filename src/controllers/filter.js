@@ -1218,7 +1218,7 @@ function initialFilterHandler() {
       }
       //颜色筛选子菜单
       $("#luckysheet-filter-orderby-color-submenu").remove();
-      $("body.object-design").append(
+      $("body#object-design").append(
         '<div id="luckysheet-filter-orderby-color-submenu" class="luckysheet-cols-menu luckysheet-mousedown-cancel">' +
           content +
           "</div>"

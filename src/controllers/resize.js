@@ -130,7 +130,7 @@ export default function luckysheetsizeauto(isRefreshCanvas = true) {
       'px;right:0px;z-index:1003;padding:5.5px;visibility:hidden;height:auto;white-space:initial;"></div>';
 
   if ($("#luckysheet-icon-morebtn-div").length == 0) {
-    $("body.object-design").append(morediv);
+    $("body#object-design").append(morediv);
   }
 
   // $("#luckysheet-icon-morebtn-div").hide();
